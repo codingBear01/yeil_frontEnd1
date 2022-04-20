@@ -1,0 +1,45 @@
+.main-container {
+  background-color: var(--containerColor);
+  line-height: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.definition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../../src/images/tangerines.jpg");
+  background-size: cover;
+  width: 100%;
+  font-weight: 600;
+}
+
+.definition article {
+  background-color: var(--containerColor);
+  width: 33%;
+  padding: 20px;
+}
+
+.recipe {
+  display: flex;
+  padding: 20px;
+}
+
+.medias {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.medias video {
+  width: 30em;
+  margin-bottom: 10px;
+}
+
+article img {
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

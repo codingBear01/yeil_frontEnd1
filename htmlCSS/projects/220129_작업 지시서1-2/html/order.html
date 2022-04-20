@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>레드향 이야기 | 주문하기</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <h1 class="header-title">레드향 이야기</h1>
+      </a>
+      <nav>
+        <ul class="header-links">
+          <li class="header-sign-in">
+            <a href="signIn.html">회원가입</a>
+          </li>
+          <li class="header-order">
+            <a href="order.html">주문하기</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <form>
+      <div class="container">
+        <div class="order-container">
+          <h1>주문하기</h1>
+
+          <fieldset class="product-info">
+            <legend>제품 선택</legend>
+
+            <ul>
+              <li>
+                <label for="prod-select" class="input-label">상품 종류</label>
+                <select id="prod-select">
+                  <option value="please_selection" selected>
+                    상품을 선택하세요
+                  </option>
+                  <option value="present_3">선물용 3kg</option>
+                  <option value="present_5">선물용 5kg</option>
+                  <option value="family_3">가정용 3kg</option>
+                  <option value="family_5">가정용 5kg</option>
+                </select>
+              </li>
+
+              <li>
+                <label class="input-label">포장 유무</label>
+                <input type="radio" name="packing" />선물포장
+                <input type="radio" name="packing" />일반포장
+                <input type="radio" name="packing" />포장 없음
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="delivery-info">
+            <legend>배송 정보</legend>
+
+            <ul>
+              <li>
+                <label class="input-label">받는분</label
+                ><input type="text" required />
+              </li>
+
+              <li>
+                <label class="input-label">연락처</label
+                ><input type="tel" required />
+              </li>
+
+              <li>
+                <label class="input-label">주소</label>
+                <textarea cols="30" rows="4"></textarea>
+              </li>
+
+              <li>
+                <label class="input-label">메시지</label>
+                <textarea cols="30" rows="4"></textarea>
+              </li>
+
+              <li>
+                <label class="input-label">배송일 선택</label>
+                <input type="date" />
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="payment-info">
+            <legend>결제 정보</legend>
+
+            <label for="bank-select"><input type="radio" />무통장 결제</label>
+            <select id="bank-select">
+              <option value="please_selection" selected>
+                은행을 선택하세요
+              </option>
+              <option value="woori">우리은행 0000-0000-0000</option>
+              <option value="kb">국민은행 0000-0000-0000</option>
+              <option value="nh">농협 0000-0000-0000</option>
+              <option value="ibk">기업은행 0000-0000-0000</option></select
+            ><br />
+
+            <input type="radio" />신용카드
+            <button class="payment-btn">결제하기</button><br />
+
+            <input type="radio" />현장 결제
+          </fieldset>
+
+          <div class="btns">
+            <button>주문하기</button>
+            <button>주문 취소</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <footer>
+      만든이: 강명모 연락처: 010-2277-8286 E-mail: jokingbear01@gmail.com
+    </footer>
+  </body>
+</html>

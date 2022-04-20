@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>        
+        <label>아이디<input type="text" autofocus></label><br>
+        <label>비밀번호<input type="text" placeholder="8글자 이상"></label><br>
+        <label>이름<input type="text" ></label><br>
+        <label>주소<input type="text"></label><br>
+        <!-- 
+            autofocus
+            여러개의 인풋필드가 존재할때
+            웹페이지 접속시 별도로 선택하지 않아도
+            가장 먼저 입력할 수 있도록
+            커서를 자동으로 위치시켜주는 기능이다.
+            오토포커스가 여러개의 인풋필드에 존재할 경우에는
+            가장 위의 인풋필드에 오토포커스가 적용된다.
+            (체크박스/라디오버튼의 checked와는 반대)
+
+            placeholder
+            텍스트필드에 아무것도 적혀있지 않을 때
+            무엇을 적어야 하는지, 어떻게 적어야 하는지를
+            안내해주기 위한 임시 텍스트로
+            글자가 한글자라도 적히면 텍스트 전체가 사라지고
+            적혔던 내용이 모두 지워지면 다시 나타난다.
+         -->
+
+         <input type="text" value="읽기전용" readonly>
+         <!-- 
+             readonly
+             수정이 불가능한 입력필드를 만들때 사용한다.
+             보통 위에서 다른 행위를 통해 값이 정해지는 경우처럼
+             다른곳에서 데이터를 가져오는 경우에 사용하며
+             편집이 불가능하지만
+             블럭지정과 데이터의 복사는 가능하다.             
+          -->
+          <br>
+          연락처: <input type="text" required>
+          <!-- 
+              required: 반드시 입력해야하는 값을
+              지정해야 할때
+           -->
+           <br>
+           <input type="submit" value="회원가입">
+           <!-- 
+               required 속성은 단독으론 사용할 수 없고
+               작성된 데이터를 서버로 전송하는 submit 버튼과
+               함께 사용한다.
+               requried 속성을 가진 데이터를 입력하지 않고
+               전송을 시도하면 해당 데이터를 입력해야 함을
+               사용자에게 알려준다.
+            -->
+
+            <br>
+            <textarea cols="20" rows="15"></textarea>
+            <!-- 
+                텍스트 에리어
+                일반적인 텍스트 입력창은 한줄로만 작성이 되고
+                엔터를 누르면 입력이 종료되지만
+                textarea의 경우, 여러줄의 텍스트를 작성할 수 있다.
+                cols와 rows 속성을 이용해서
+                텍스트에리어의 크기를 지정해줄수 있다.
+                cols는 가로폭(글자수)
+                rows는 세로폭(줄수)
+             -->
+             <br><br>
+             <select>
+                 <option value="선택1">aaa</option>
+                 <option value="선택2" selected>bbb</option>
+                 <option value="선택3">ccc</option>
+                 <option value="선택4">ddd</option>
+             </select>
+             <!-- 
+                 드롭다운 메뉴를 만들어주는 태그
+                 select로 메뉴의 틀을 잡고
+                 option을 추가해서 메뉴에 선택지를 추가한다.
+                 선택지의 갯수가 많거나
+                 혹은 사용자가 선택한 값을 보기 편하게
+                 화면에 표시하고자 할때 사용한다.
+                 
+                 -select에 size값을 부여하면
+                 한번에 보여주는 옵션의 갯수가 변경되며 기본값은 1이다.
+                 -옵션에 selected 속성을 추가하면
+                 드롭다운의 초기 선택값이 해당 옵션으로 지정된다.
+              -->
+
+
+
+              <br><br>
+              <input type="text" list="datalist">
+              <datalist id="datalist">
+                  <option value="옵션1">aaa</option>
+                  <option value="옵션2">bbb</option>
+                  <option value="옵션3">ccc</option>
+                  <option value="옵션4">edd</option>
+                  <option value="옵션5">eee</option>
+              </datalist>
+              <!-- 
+                  데이터리스트
+                  select(드롭다운) 형태의 목록과 비슷하지만
+                  value값과 텍스트값이 함께 메뉴에 노출되고
+                  데이터리스트에 데이터 일부를 사용자가 직접 입력해서
+                  입력한 데이터와 가까운(비슷한) 데이터만을
+                  골라서 메뉴에 띄우는 것도 가능하다.
+                  저장된 내용이 길거나, 복잡하거나, 많은 경우에는
+                  select(드롭다운)보다 데이터리스트가
+                  훨씬 효율적인 ui라고 볼수 있다.
+               -->
+             
+
+    </form>
+</body>
+</html>

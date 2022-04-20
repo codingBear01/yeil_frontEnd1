@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    <style>
+        .myAlign{
+            text-align: center;
+            /* 
+                문자의 정렬방식을 선택하는 스타일
+                속성값에 따라서 텍스트들이
+                화면상에서 정렬되는 방향이 달라진다.
+            */         
+        }
+    </style>
+</head>
+<body>
+    <p style="text-align: left;">
+        왼쪽정렬입니다. 왼쪽정렬입니다. 왼쪽정렬입니다. 왼쪽정렬입니다. 왼쪽정렬입니다. 
+    </p>
+
+    <p style="text-align: right;">
+        오른쪽정렬입니다. 오른쪽정렬입니다. 오른쪽정렬입니다. 오른쪽정렬입니다. 오른쪽정렬입니다. 
+    </p>
+
+    <p style="text-align: center;">
+        가운데정렬입니다. 가운데정렬입니다. 가운데정렬입니다. 가운데정렬입니다. 가운데정렬입니다. 
+    </p>
+
+    <p style="text-align: justify;">
+        양쪽정렬입니다. 양쪽정렬입니다. 양쪽정렬입니다. 양쪽정렬입니다. 양쪽정렬입니다.
+        <!-- 
+            양쪽정렬은 왼쪽정렬과 비슷하게 화면에 표시되지만
+            자동줄바꿈으로 인해 줄이 바뀌게 됐을때
+            오른쪽에 공간이 남지 않도록 텍스트를 정렬해준다는
+            차이점이 있다.
+         -->
+    </p>  
+
+
+
+    <p>줄간격을 별도로 설정하지 않았을 때 줄 간격은 이와 같이 나타납니다.</p>
+    <p style="line-height: 24px;">
+        줄간격을 24px로 했을때의 줄 사이의 간격은 보시는 바와 같은 간격이 됩니다.
+    </p>
+    <p style="line-height: 50%;">
+        줄간격을 50%로 했을때의 줄 사이의 간격은 보시는 바와 같은 간격이 됩니다.
+    </p>
+    <p style="line-height: 4.0;">
+        줄간격을 4.0으로 했을때의 줄 사이의 간격은 보시는 바와 같은 간격이 됩니다.
+    </p>
+    <!-- 
+        line-height
+        서로 다른 라인(줄)에 작성된 내용 사이의 간격을 임의로
+        조절해줄 수 있다.
+        자동 줄바꿈이든, br을 통한 강제 줄바꿈이든 상관없이 적용되며
+        한 줄의 위아래 간격이 모두 변경되기 때문에
+        결과적으로 같은 문단에 포함되지 않는 다른 객체와의
+        간격에서도 차이가 나게 된다.
+        px:픽셀 단위로 수치를 변경. 기본값은 12px
+        %:비율단위로 수치를 변경. 기본값은 100%
+        실수:수치를 직접 작성해서 간격을 변경. 기본값은 1.0
+     -->
+
+    <div style="background-color: black; 
+                height: 100px;
+                line-height: 100px;
+                color: white;
+                text-align: center;"                
+                >
+        HTML
+    </div>
+    <!-- 
+        줄간격을 이용해서 텍스트의 상하정렬을 구현하는 것도 가능하다.
+        텍스트가 들어가는 공간의 높이와 동일하게 줄간격을 주면
+        상하정렬이 중간으로 들어간다.
+     -->
+
+     <hr>
+
+     <p style="text-decoration: none;">
+         텍스트 줄표시의 기본값입니다.
+     </p>
+     <p style="text-decoration: underline;">
+        텍스트의 밑줄표시를 해주는 스타일입니다.
+     </p>
+     <p style="text-decoration:overline;">
+        텍스트의 윗줄표시를 해주는 스타일입니다.
+     </p>
+     <p style="text-decoration: line-through;">
+        텍스트의 삭선표시를 해주는 스타일입니다.
+     </p>
+     <!-- 
+         텍스트를 꾸며주는 용도로 사용되는 스타일.
+         윗줄은 현실적으로 거의 않는 스타일이며
+         삭선은 특정한 경우(할인 등)가 아닌 이상은
+         웹페이지가 다소 지저분해 보이거나
+         미완성처럼 보이게 할 수 있기 때문에
+         그다지 사용되지 않는다.
+      -->
+
+     <hr>
+
+     <p style="text-shadow: 0.5px 0.5px 0px #FF0000">
+         텍스트에 그림자 효과를 추가합니다.<br>
+         속성값은 순서대로 가로거리, 세로거리, 그림자의 흐림 정도, 색상
+         흐림이 0에 가까울수록 그림자는 선명해지고
+         0이면 텍스트와 완벽하게 동일한 그림자가 나타난다.
+         반대로 수치가 크면 클수록 그림자는 옅어진다.
+         
+         흐림이 낮으면, 텍스트와 그림자 사이의 거리를
+         가깝게 해주는 편이 가독성이 좋아지고
+         반대로 흐림이 높으면 텍스트와 그림자 사이의 거리를
+         멀게 해주더라도 텍스틀 보는데 큰 지장이 없다.         
+     </p>
+
+     <hr>
+
+     <p style="text-transform: none;">
+        transform style.
+     </p>
+     <p style="text-transform:uppercase;">
+        this is uppercase.
+     </p>
+     <p style="text-transform: lowercase;">
+        THIS IS LOWER CASE.
+     </p>
+     <p style="text-transform: capitalize;">
+        tHIS is capitalize.       
+     </p>
+     <!-- 
+         text-transform
+         텍스트(영어)의 대소문자를 조절하는 속성
+         uppercase : 모든 글자를 대문자로 표기
+         (소문자로 작성했어도 대문자로 변경)
+         lowercase: 모든 글자를 소문자로 표기
+         (대문자로 작성했어도 소문자로 변경)
+         capitalize: 단어의 첫글자를 대문자로 변경
+         (각 단어의 첫글자에만 영향을 끼치고 다른글자는
+         대문자든 소문자든 그대로 유지된다.)
+      -->
+
+      <hr>
+      <p>
+        글자 사이의 간격을 조절할 수 있다.
+    </p>
+      <p style="letter-spacing: 3px;">
+          글자 사이의 간격 3px입니다.
+      </p>
+      <p style="letter-spacing: -5px;">
+        글자 사이의 간격 -2px입니다.
+    </p>
+    <p style="word-spacing: 10px;">
+        단어 사이의 간격만 변경할수도 있다.</p>
+     <!-- 
+         letter-spacing은 각 글자 하나하나 마다
+         사이 간격을 변경한다.(자간)
+         word-spacing은 글자가 아닌 단어 단위로
+         각 단어 사이에 띄어진 간격을 변경.(띄어쓰기 변경)
+         수치값은 px, pt, em, rem 등등 다 사용할수 있다.
+      -->
+
+
+      <p style="margin-bottom: 50px;">문단1번의 영역입니다.</p>
+      <p>문단2번의 영역입니다.</p>
+      <p>문단3번의 영역입니다.</p>
+        <!--  
+            문단 사이의 간격을 조절할때는
+            문단 아래의 여유공간을 나타내는
+            margin-bottom 값을 변경해서
+            문단 사이 간격만을 조절해줄 수 있다.
+        -->    
+</body>
+</html>

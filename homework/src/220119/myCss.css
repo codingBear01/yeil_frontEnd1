@@ -1,0 +1,8 @@
+h2{
+    background-color: red;  
+     /*배경색*/
+    font-weight: lighter;
+    /* 텍스트의 두께 */
+    color: yellow;
+    /* 글자색 */
+}

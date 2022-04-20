@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>220118_form01</title>
+  </head>
+
+  <body>
+    <h1>회원가입을 환영합니다.</h1>
+
+    <form>
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+          <li>
+            <label>아이디</label>
+            <input type="text" />
+          </li>
+          <li>
+            <label>이메일</label>
+            <input type="email" />
+          </li>
+          <li>
+            <label>비밀번호</label>
+            <input type="password" />
+          </li>
+          <li>
+            <label>비밀번호 확인</label>
+            <input type="password" />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <label
+          ><input type="radio" name="mailing" value="mail_yes" checked />메일
+          수신</label
+        >
+        <label
+          ><input type="radio" name="mailing" value="mail_no" />메일 수신
+          안함</label
+        >
+
+        <fieldset>
+          <legend>관심사</legend>
+          <label><input type="checkbox" value="fation" />패션</label>
+          <label><input type="checkbox" value="enter" />연예</label>
+          <label><input type="checkbox" value="it" />IT</label>
+          <label><input type="checkbox" value="life" />생활</label>
+        </fieldset>
+      </fieldset>
+
+      <input type="submit" value="가입하기" />
+      <input type="reset" value="취소" />
+    </form>
+  </body>
+</html>

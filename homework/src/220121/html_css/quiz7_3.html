@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>p.235 마무리문제 3</title>
+    <style>     
+        table, th, td{
+            border: 1px solid #000;
+            border-collapse: collapse;
+            /* 
+                테두리를 구현하기 위해 테이블과 헤더, 데이터에
+                border를 구현하고 테두리간 간격을 없애기 위해
+                collapse 스타일을 추가
+            */
+        }
+        td, th{
+            padding: 10px;
+            /* 
+                각 셀의 크기가 텍스트 내용에 딱 맞는게 아니라
+                적당한 여유공간을 가질수 있도록 패딩값을 추가
+            */
+        }
+        .heading{
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <table style="caption-side: bottom;">
+        <caption>2019 국민 독서실태</caption>
+        <tr>
+            <th class="heading">구분</th>
+            <th class="heading">성인</th>
+            <th class="heading">독서자</th>
+        </tr>
+        <tr>
+            <th class="heading">종이책</th>
+            <td>6.1권</td>
+            <td>11.8권</td>
+        </tr>
+        <tr>
+            <th class="heading">전자책</th>
+            <td>1.2권</td>
+            <td>7.1권</td>
+        </tr>
+        <tr>
+            <th class="heading">오디오북</th>
+            <td>0.2권</td>
+            <td>5.5권</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

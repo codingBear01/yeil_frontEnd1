@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+
+    <style>
+        .listImage{
+            list-style-image: url("../image/marker.png");            
+        }       
+         /*
+            리스트 앞에 붙는 마커를 이미지로 변경해주는 스타일
+            이미지의 크기를 그대로 사용하기 떄문에
+            가능한 원본 이미지의 크기를 조절해서 사용할 필요가 있다.
+         */
+
+    </style>
+</head>
+<body>
+    <ul style="list-style-type: disc;">
+        <li>기본값(disc)선택지 1번</li>
+        <li>선택지 2번</li>
+        <li>선택지 3번</li>
+        <li>선택지 4번</li>
+    </ul>
+
+    <ul style="list-style-type: circle;">
+        <li>circls 선택지 1번</li>
+        <li>선택지 2번</li>
+        <li>선택지 3번</li>
+        <li>선택지 4번</li>
+    </ul>
+
+    <ul style="list-style-type: square;">
+        <li>square 선택지 1번</li>
+        <li>선택지 2번</li>
+        <li>선택지 3번</li>
+        <li>선택지 4번</li>
+    </ul>
+
+    <ul style="list-style-type: decimal;">
+        <li>decimal 선택지 1번</li>
+        <li>선택지 2번</li>
+        <li>선택지 3번</li>
+        <li>선택지 4번</li>
+    </ul>
+
+    <ul style="list-style-type: decimal-leading-zero;">
+        <li>zero 선택지 1번</li>
+        <li>선택지 2번</li>
+        <li>선택지 3번</li>
+        <li>선택지 4번</li>
+    </ul>
+
+    <ul style="list-style-type: cjk-decimal;">
+        <li>zero 선택지 1번</li>
+        <li>선택지 2번</li>
+        <li>선택지 3번</li>
+        <li>선택지 4번</li>
+    </ul>
+
+    <!-- 
+        리스트의 마커 형태는 각 국가, 언어별로
+        준비가 되어있기 때문에 필요한 형태를
+        검색해서 사용하는것을 권장한다.
+        https://developer.mozilla.org/en-US/docs
+                        /Web/CSS/list-style-type
+        모질라에서 제공하는 개발자 레퍼런스 사이트를 참조.
+     -->
+
+     <ul class="listImage">
+        <li>zero 선택지 1번</li>
+        <li>선택지 2번</li>
+        <li>선택지 3번</li>
+        <li>선택지 4번</li>
+    </ul>
+
+    <ul style="list-style-type: none;">
+        <li>none 스타일 선택지 1번</li>
+        <li>선택지 2번</li>
+        <li>선택지 3번</li>
+        <li>선택지 4번</li>
+    </ul>
+
+    
+
+    <ul style="list-style-position: outside;">
+        <li>들여쓰기를 하지 않은 리스트입니다.</li>
+        <li>선택지 2번</li>
+        <li>선택지 3번</li>
+        <li>선택지 4번</li>
+    </ul>
+    <ul style="list-style-position: inside;">
+        <li>들여쓰기를 한 리스트입니다.</li>
+        <li>선택지 2번</li>
+        <li>선택지 3번</li>
+        <li>선택지 4번</li>
+    </ul>
+
+    <!-- 
+        list-style-position
+        리스트의 들여쓰기 유무를 결정해주는 스타일
+        inside :들여쓰기를 적용
+        outside : 들여쓰기를 적용하지 않음
+     -->
+     <!-- 
+         css의 속성들을 다루다보면 공통적으로
+         사용이 가능한 속성값들이 있는데
+         initial : 기존값을 무시하고 초기값으로 설정함
+         inherit : 부모에게 상속받은 값을 그대로 사용함
+      -->
+
+      <ul style="list-style: square inside ">
+        <li>스타일 한번에 적용시킨 선택지 1번</li>
+        <li>선택지 2번</li>
+        <li>선택지 3번</li>
+        <li>선택지 4번</li>
+    </ul>
+    <!-- 
+        개별적으로 작성하던 스타일을 한번에
+        작성할수 있도록 해준다.
+        리스트가 가지는 각 스타일들은
+        스타일값이 저마다 고유값을 사용하기 때문에
+        겹치는 값이 없어서 순서 상관없이
+        적용시킬 스타일의 값을 적어주면 된다.
+        다만 같은 스타일에 대해 다른 값을 넣어주면
+        마지막에 넣어준 값으로 적용이 된다.
+        ex)list-style : inside outside
+        ->list-style-position값을 2개 넣었기 때문에
+        나중에 넣은 outside로 취급한다.
+     -->
+
+
+     <hr>
+     <ul>
+         <li>회사 소개</li>
+         <li>도서</li>
+         <li>자료실</li>
+         <li>동영상 강의</li>
+     </ul>
+
+     <ul style="list-style-type: none; width: 200px;">
+        <li style="border: 1px solid #000;
+                   padding:20px 40px;
+                   margin: 5px;">회사 소개</li>
+        <li style="border: 1px solid #000; padding:20px 40px;margin: 5px;">도서</li>
+        <li style="border: 1px solid #000; padding:20px 40px;margin: 5px;">자료실</li>
+        <li style="border: 1px solid #000; padding:20px 40px;margin: 5px;">동영상 강의</li>
+    </ul>
+
+
+    
+</body>
+</html>

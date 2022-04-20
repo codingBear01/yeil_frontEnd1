@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>레드향 이야기 | 회원가입</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <h1 class="header-title">레드향 이야기</h1>
+      </a>
+      <nav>
+        <ul class="header-links">
+          <li class="header-sign-in">
+            <a href="signIn.html">회원가입</a>
+          </li>
+          <li class="header-order">
+            <a href="order.html">주문하기</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <form>
+      <div class="container">
+        <div class="sign-in-container">
+          <h1>회원가입</h1>
+
+          <fieldset class="id-info">
+            <legend>계정 정보</legend>
+
+            <ul>
+              <li>
+                <label class="input-label">아이디</label
+                ><input
+                  type="text"
+                  placeholder="영문숫자 조합 12자까지"
+                  maxlength="12"
+                  required
+                />
+              </li>
+
+              <li>
+                <label class="input-label">비밀번호</label
+                ><input
+                  type="password"
+                  placeholder="영문숫자 조합 12자까지"
+                  maxlength="12"
+                  required
+                />
+              </li>
+
+              <li>
+                <label class="input-label">비밀번호 확인</label
+                ><input type="password" required />
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="user-info">
+            <legend>회원 정보</legend>
+
+            <ul>
+              <li>
+                <label class="input-label">이름</label
+                ><input type="text" required />
+              </li>
+
+              <li>
+                <label class="input-label">생년월일</label
+                ><input type="date" required />
+              </li>
+
+              <li>
+                <label class="input-label">이메일</label
+                ><input type="email" placeholder="abc@abc.com" required />
+              </li>
+
+              <li>
+                <label class="input-label">연락처</label
+                ><input type="tel" placeholder="ex)012-345-6789" required />
+              </li>
+
+              <li>
+                <label class="input-label">주소</label
+                ><textarea cols="25" rows="4"></textarea>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="etc-info">
+            <legend>기타 정보</legend>
+            <div class="etc-info-box">
+              <span>가입 경로</span><br />
+              <input type="checkbox" />인터넷 검색 <input type="checkbox" />광고
+              <input type="checkbox" />지인추천
+              <input type="checkbox" />기타<input type="text" />
+            </div>
+
+            <div class="etc-info-box">
+              <span>메일링 가입</span><br />
+              <input type="radio" name="mailing" />메일 수신
+              <input type="radio" name="mailing" />수신 거부
+            </div>
+
+            <div class="etc-info-box">
+              <span>관심 정보</span><br />
+              <input type="checkbox" />쇼핑 <input type="checkbox" />IT
+              <input type="checkbox" />생활 <input type="checkbox" />영화
+              <input type="checkbox" />스포츠
+            </div>
+          </fieldset>
+
+          <div class="btns">
+            <button>가입하기</button>
+            <button>다시 작성</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <footer>
+      만든이: 강명모 연락처: 010-2277-8286 E-mail: jokingbear01@gmail.com
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>220118_sol04</title>
+  </head>
+  <body>
+    <form>
+      <h1>주문하기</h1>
+      <fieldset>
+        <legend>제품 선택</legend>
+
+        <input type="text" list="goods" />
+        <datalist id="goods">
+          <option value="선물용 3kg">35000원</option>
+          <option value="선물용 5kg">52000원</option>
+          <option value="가정용 3kg">30000원</option>
+          <option value="가정용 5kg">47000원</option>
+        </datalist>
+
+        <br />
+        포장 유무<br />
+        <input type="radio" name="packing" />선물포장
+        <input type="radio" name="packing" />일반포장
+        <input type="radio" name="packing" />포장안함
+      </fieldset>
+      <fieldset>
+        <legend>배송 정보</legend>
+        <ul>
+          <li>
+            받는분
+            <input type="text" />
+          </li>
+          <li>
+            연락처
+            <input type="tel" placeholder="ex)012-345-6789" />
+          </li>
+          <li>
+            주소
+            <textarea cols="40" rows="3"></textarea>
+          </li>
+          <li>
+            메시지
+            <textarea cols="40" rows="3"></textarea>
+          </li>
+          <li>
+            배송일 선택
+            <input type="date" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>결재 방법</legend>
+        <input type="radio" name="pay" />무통장 결재
+        <select>
+          <option selected>결재 은행을 선택하세요</option>
+          <option>우리은행 000-0000-00000</option>
+          <option>국민은행 000-0000-00000</option>
+          <option>농협 000-0000-00000</option>
+          <option>기업은행 000-0000-00000</option>
+        </select>
+
+        <br />
+
+        <input type="radio" name="pay" />신용카드
+        <input type="button" value="결재하기" /><br />
+
+        <input type="radio" name="pay" />현장 결재<br />
+      </fieldset>
+      <input type="submit" value="주문하기" />
+      <input type="reset" value="주문취소" />
+    </form>
+  </body>
+</html>

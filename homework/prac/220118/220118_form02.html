@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>220118_form02</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>라디오버튼</legend>
+        <label
+          ><input name="gender" type="radio" checked value="male" />남자</label
+        >
+        <label><input name="gender" type="radio" value="female" />여자</label>
+        <label><input name="gender" type="radio" value="secreat" />비밀</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>체크박스</legend>
+        <label><input type="checkbox" checked value="p3" />선물용 3kg</label>
+        <label><input type="checkbox" value="p5" />선물용 5kg</label>
+        <label><input type="checkbox" value="f3" />가정용 3kg</label>
+        <label><input type="checkbox" checked value="f5" />가정용 5kg</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>숫자 입력 필드</legend>
+
+        개수:
+        <input type="number" min="-1" max="10" step="3" value="5" />개<br />
+        개수: <input type="range" min="-10" max="10" value="0" />개
+      </fieldset>
+
+      <fieldset>
+        <legend>날짜 입력</legend>
+        <input type="date" />DATE<br />
+        <input type="month" />MONTH<br />
+        <input type="week" />WEEK<br />
+      </fieldset>
+
+      <fieldset>
+        <legend>시간 입력</legend>
+        <input type="time" />TIME<br />
+        <input type="datetime" />DATE<br />
+        <input type="datetime-local" />LOCAL<br />
+        <!-- 
+            시간을 입력하는 것은
+            time, datetime, datetime-local이 있으며
+            time은 시간
+            datetime, datetime-local은 날짜를 포함한 시간을
+            표기한다.
+         -->
+      </fieldset>
+
+      <fieldset>
+        <legend>버튼</legend>
+        <input type="image" src="../image/log.png" width="100" />
+        <input type="button" value="로그인" />
+      </fieldset>
+
+      <fieldset>
+        <legend>파일첨부</legend>
+        <input type="file" />
+      </fieldset>
+
+      <fieldset>
+        <legend>히든 데이터</legend>
+        <p>히든데이터는 화면에 표시되지 않습니다.</p>
+        <input type="hidden" value="direct_login" />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2nd Class Sol-01</title>
+    <style>
+      article {
+        color: white;
+      }
+
+      #clip-border {
+        background-clip: border-box;
+        background-color: red;
+        border: 3px dotted white;
+        padding: 20px;
+      }
+      #clip-padding {
+        background-clip: padding-box;
+        background-color: orange;
+        border: 3px dotted white;
+        padding: 20px;
+      }
+      #clip-content {
+        background-clip: content-box;
+        background-color: yellow;
+        border: 3px dotted white;
+        padding: 20px;
+      }
+
+      #img-box {
+        background-image: url(../images/nongdamgombg.png);
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        background-repeat: repeat;
+        background-position: right bottom;
+      }
+
+      ul {
+        list-style-type: none;
+        margin-left: -30px;
+      }
+
+      li {
+        background-image: url(../images/cat.jpg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 70px;
+        line-height: 70px;
+        background-size: 50px 50px;
+      }
+
+      #bg-border {
+        background-origin: border-box;
+        background-color: red;
+        border: 3px dotted white;
+        padding: 20px;
+        background-image: url(../images/cat.jpg);
+        background-size: 100px;
+        background-repeat: no-repeat;
+      }
+      #bg-padding {
+        background-origin: padding-box;
+        background-color: orange;
+        border: 3px dotted white;
+        padding: 20px;
+        background-image: url(../images/cat.jpg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+      }
+      #bg-content {
+        background-origin: content-box;
+        background-color: yellow;
+        border: 3px dotted white;
+        padding: 20px;
+        background-image: url(../images/cat.jpg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+      }
+
+      #fixedBg {
+        background-attachment: fixed;
+        background-image: url(../images/nongdamgombg.png);
+      }
+
+      #bg_contain {
+        background-image: url(../images/cat.jpg);
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+      }
+      #bg_cover {
+        background-image: url(../images/cat.jpg);
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body id="fixedBg">
+    <article class="at1" id="clip-border">
+      <h3>강아지 집</h3>
+      <p>
+        강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가
+        다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.집을 구입하실 때는
+        박음질이 잘 되어 있는지, 세탁이 간편한 제품인지 꼭 확인하시고 고르시는
+        것이 좋습니다.
+      </p>
+    </article>
+
+    <article class="at2" id="clip-padding">
+      <h3>강아지 먹이</h3>
+      <p>
+        강아지의 먹이는 꼭 어린 강아지용으로 나와있는 사료를 선택하세요.
+        강아지들은 사람에 비해 성장속도가 8배정도 빠르답니다. 따라서
+        강아지에게는 성장속도에 맞는 사료를 급여하셔야 합니다. 사람이 먹는
+        음식을 먹게 되면 양념과 향신료에 입맛이 익숙해지고, 비만이 될 가능성이
+        매우 높아집니다. 강아지용 사료는 생후 12개월까지 급여하셔야 합니다.
+      </p>
+    </article>
+
+    <article class="at1" id="clip-content">
+      <h3>강아지 집</h3>
+      <p>
+        강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가
+        다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.집을 구입하실 때는
+        박음질이 잘 되어 있는지, 세탁이 간편한 제품인지 꼭 확인하시고 고르시는
+        것이 좋습니다.
+      </p>
+    </article>
+
+    <div id="img-box"></div>
+
+    <hr />
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+
+    <article class="at1" id="bg-border">
+      <h3>강아지 집</h3>
+      <p>
+        강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가
+        다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.집을 구입하실 때는
+        박음질이 잘 되어 있는지, 세탁이 간편한 제품인지 꼭 확인하시고 고르시는
+        것이 좋습니다.
+      </p>
+    </article>
+    <article class="at1" id="bg-padding">
+      <h3>강아지 집</h3>
+      <p>
+        강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가
+        다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.집을 구입하실 때는
+        박음질이 잘 되어 있는지, 세탁이 간편한 제품인지 꼭 확인하시고 고르시는
+        것이 좋습니다.
+      </p>
+    </article>
+    <article class="at1" id="bg-content">
+      <h3>강아지 집</h3>
+      <p>
+        강아지가 편히 쉴 수 있는 포근한 집이 필요합니다. 강아지의 집은 강아지가
+        다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.집을 구입하실 때는
+        박음질이 잘 되어 있는지, 세탁이 간편한 제품인지 꼭 확인하시고 고르시는
+        것이 좋습니다.
+      </p>
+    </article>
+
+    <div id="bg_contain"></div>
+    <div id="bg_cover"></div>
+  </body>
+</html>

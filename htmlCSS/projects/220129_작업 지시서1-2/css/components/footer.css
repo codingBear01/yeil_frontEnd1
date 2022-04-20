@@ -1,0 +1,6 @@
+footer {
+  text-align: center;
+  background-color: var(--footerColor);
+  color: white;
+  line-height: 50px;
+}

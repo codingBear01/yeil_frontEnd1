@@ -1,0 +1,64 @@
+/* components */
+@import "../css/components/header.css";
+@import "../css/components/container.css";
+@import "../css/components/footer.css";
+
+/* screens */
+@import "../css/screens/index.css";
+@import "../css/screens/order.css";
+@import "../css/screens/signIn.css";
+
+/* root */
+:root {
+  --headerColor: #ffad42;
+  --containerColor: #f57c00;
+  --footerColor: #bb4d00;
+}
+
+/* styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+fieldset {
+  margin-top: 20px;
+  padding: 20px;
+  width: 500px;
+  border: 1px solid black;
+}
+
+legend {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.input-label {
+  float: left;
+  width: 110px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns button {
+  margin: 10px;
+  width: 80px;
+  height: 40px;
+  background-color: var(--footerColor);
+  border-radius: 20px;
+  border-style: none;
+  text-align: center;
+  color: white;
+}
+
+.btns button:hover {
+  cursor: pointer;
+}

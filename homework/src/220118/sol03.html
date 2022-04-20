@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>회원가입</h1>
+   <form>
+        <fieldset>
+            <legend>계정 정보</legend>
+                <ul>
+                    <li>아이디 
+                        <input type="text"
+                        placeholder="영문 숫자 조합 12자 까지"> 
+                    </li>
+                    <li>비밀번호
+                        <input type="password"
+                        placeholder="영문 숫자 조합 16자 까지"
+                    </li>
+                </ul>
+        </fieldset>
+        <fieldset>
+            <legend>회원 정보</legend>
+            <ul>
+                <li>
+                    이름 <input type="text">
+                </li>
+                <li>
+                    생년월일 <input type="date">
+                </li>
+                <li>
+                    이메일 <input type="email"
+                            placeholder="abc@abc.com">
+                </li>
+                <li>
+                    연락처 <input type="tel"
+                            placeholder="012-345-6789">
+                </li>
+                <li>
+                    주소 <textarea cols="40" rows="4"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+        <legend>기타 정보</legend>
+            <p>
+                가입경로<br>
+                <input type="checkbox">인터넷 검색 
+                <input type="checkbox">광고 
+                <input type="checkbox">지인추천
+                <input type="checkbox">기타 <input type="text">
+            </p>
+            <p>
+                메일링 가입<br>
+                <input type="radio" name="mailing" checked>메일 수신 
+                <input type="radio" name="mailing">수신 거부
+            </p>
+            <p>
+                관심 정보<br>
+                <input type="checkbox">쇼핑 
+                <input type="checkbox">IT 
+                <input type="checkbox">생활 
+                <input type="checkbox">영화 
+                <input type="checkbox">스포츠
+            </p>
+        </fieldset>
+        <input type="submit" value="가입하기">
+        <input type="reset" value="다시 작성">
+    </form>
+</body>
+</html>

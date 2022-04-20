@@ -1,0 +1,29 @@
+.order-container {
+  width: 540px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order-container li {
+  margin: 10px 0;
+}
+
+.payment-info input {
+  margin: 10px 0;
+}
+
+.payment-btn {
+  width: 65px;
+  height: 20px;
+  background-color: var(--footerColor);
+  border-radius: 10px;
+  border-style: none;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+
+.payment-btn:hover {
+  cursor: pointer;
+}

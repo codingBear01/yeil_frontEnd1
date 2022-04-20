@@ -1,0 +1,11 @@
+<what is CLASS in javascript>
+
+CLASS = 함수 + 변수
+탄생배경: code가 길어져서 나오게 됨. project를 분업화하여 효율적으로 관리
+object의 확장 개념
+훨씬 더 많은 작업이 가능
+
+dataClass = field(data)만 갖고 있는 클래스
+
+* OOP(Object Orented Programming)가 바탕임. OOP 이해가 중요
+Encapsulation: 가장 근본적인 개념

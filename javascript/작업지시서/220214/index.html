@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lotto!</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="input-box">
+        <span class="input-box_title">번호를 입력하세요!</span>
+        <div>
+          <input
+            class="input_user-num input_user-num1"
+            type="number"
+            min="1"
+            max="45"
+          />
+          <button class="btn_input-user-num1 btn-input"></button>
+        </div>
+        <div>
+          <input
+            class="input_user-num input_user-num2"
+            type="number"
+            min="1"
+            max="45"
+          />
+          <button class="btn_input-user-num2 btn-input"></button>
+        </div>
+        <div>
+          <input
+            class="input_user-num input_user-num3"
+            type="number"
+            min="1"
+            max="45"
+          />
+          <button class="btn_input-user-num3 btn-input"></button>
+        </div>
+        <div>
+          <input
+            class="input_user-num input_user-num4"
+            type="number"
+            min="1"
+            max="45"
+          />
+          <button class="btn_input-user-num4 btn-input"></button>
+        </div>
+        <div>
+          <input
+            class="input_user-num input_user-num5"
+            type="number"
+            min="1"
+            max="45"
+          />
+          <button class="btn_input-user-num5 btn-input"></button>
+        </div>
+        <div>
+          <input
+            class="input_user-num input_user-num6"
+            type="number"
+            min="1"
+            max="45"
+          />
+          <button class="btn_input-user-num6 btn-input"></button>
+        </div>
+        <div>
+          <input
+            class="input_user-num input_user-bonus-num"
+            type="number"
+            min="1"
+            max="45"
+            placeholder="2등 보너스"
+          />
+          <button class="btn_input-user-bonus-num btn-input"></button>
+        </div>
+      </div>
+      <div class="user-num-box">
+        <span>현재 당신이 선택한 숫자</span>
+        <div class="user-selected-num-box">
+          <div class="box1"></div>
+          <div class="box2"></div>
+          <div class="box3"></div>
+          <div class="box4"></div>
+          <div class="box5"></div>
+          <div class="box6"></div>
+          <div class="box7"></div>
+        </div>
+      </div>
+      <button class="result-btn">과연 결과는...?</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

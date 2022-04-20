@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- 
+            라디오버튼, 체크박스
+            몇가지의 선택지를 제시하고
+            사용자에게 선택지중 일부를 선택하도록 하는 ui
+            라디오버튼의 경우 하나의 그룹에서
+            오직 하나만 선택할 수 있고
+            체크박스는 하나의 그룹에서 여러개를 선택할수 있다.
+         -->
+         <fieldset>
+             <legend>라디오버튼</legend>
+             <label><input name="gender" type="radio" checked value="male">남자</label>
+             <label><input name="gender" type="radio" value="female">여자</label>
+             <label><input name="gender" type="radio" value="secreat">비밀</label>
+             <!-- 
+                 라디오버튼을 사용할때는
+                 같은 그룹에 포함돼서 중복선택하면 안되는 버튼들은
+                 같은 name(이름)을 적용시켜주면
+                 같은 이름을 가진 라디오버튼끼리는 하나의 그룹으로
+                 인식해서 중복선택이 불가능해진다.
+
+                 일반적으로 라디오버튼을 사용하는 것은
+                 주어진 선택지중 반드시 하나를 선택해야 하는 경우에
+                 많이 사용을 하는데
+                 만약 아무것도 선택하지 않으면
+                 개발자가 의도한 데이터를 전달받지 못하는 경우가 생긴다.
+                 때문에 이런 경우를 사전에 방지하기 위해서
+                 라디오버튼 그룹에 아무것도 선택하지 않아도
+                 기본값으로 하나가 선택되도록 만들어야할 필요가 있는데
+                 이때 사용하는 속성값이 checked이다.
+                 checked속성이 적용된 라디오버튼은 선택된 상태로
+                 웹페이지가 시작되고
+                 만약 하나의 그룹 내의 라디오버튼에
+                 여러개의 checked값을 주면, 가장 마지막에 작성된
+                 checked값만 적용이 된다.
+              -->
+         </fieldset>
+         <br><br>
+         <fieldset>
+             <legend>체크박스</legend>
+             <label><input type="checkbox" checked value="p3">선물용 3kg</label>
+             <label><input type="checkbox" value="p5">선물용 5kg</label>
+             <label><input type="checkbox" value="f3">가정용 3kg</label>
+             <label><input type="checkbox" checked value="f5">가정용 5kg</label>
+             <!-- 
+                 체크박스
+                 라디오버튼과 달리 중복 선택을 허용하는
+                 선택지들을 제시하고자 할때 사용하는 ui로
+                 각각 독립된 체크박스를 사용하기 때문에
+                 하나의 체크박스가 다른 체크박스에게 영향을 끼치지 않는다.
+
+                 라디오버튼과 마찬가지로 checked 속성값을 통해
+                 처음부터 선택된 상태로 만들어줄 수 있으며
+                 라디오버튼과 달리 중복선택도 가능하기 때문에
+                 checked 속성값을 가진 체크박스 모두가
+                 체크된 상태로 페이지가 만들어 진다.
+
+                 라디오버튼은 이미 선택된 항목을 선택해제할수 없지만
+                 체크박스는 선택을 해제할수 있다.
+
+                 텍스트를 직접 입력하던 text, password, email 등의 type과 달리
+                 라디오버튼과 체크박스는 해당 항목을 선택 했느냐 안했느냐의
+                 값으로 판단이 되기 때문에
+                 중복된 내용으로 전달될 수 있다.
+                 때문에 각각의 버튼의 값을 구분짓고, 서버단에서
+                 사용할 수 있도록 전달되는 값을 직접 지정해줄수 있는데
+                 이것을 value라는 속성을 이용해서 전달한다.
+              -->
+
+              <!-- 
+                  텍스트를 입력하던 input과 달리
+                  라디오버튼이나 체크박스의 경우 선택영역의 크기가 작아서
+                  모바일환경의 경우 선택이 어려운 경우도 있다.
+                  때문에 label을 통해서 input ui와 텍스트를
+                  하나로 묶어주게 되면
+                  텍스트 부분을 클릭하는 것으로도 input ui가 반응하도록
+                  만들 수 있고 이는 사용자 편의성의 증대로 이어진다.
+               -->
+         </fieldset>
+
+         <fieldset>
+             <legend>숫자 입력 필드</legend>
+
+             갯수: <input type="number" min="-1" max="10" step="3" value="5">개<br>
+             <!-- 
+                 min: 가질 수 있는 숫자의 최소값
+                 max: 가질 수 있는 숫자의 최대값
+                 step: 유효한 숫자의 범위
+                    (min값에서부터 step값의 배수만큼 더한 숫자가 유효숫자가 된다.
+                    ex:min 4, step:2 ->4,6,8,10
+                       min 5, step:2 ->5,7,9,11)
+                 value: 초기값
+              -->
+              갯수: <input type="range" min="-10" max="10"  value="0">개
+
+              <!-- 
+                  숫자를 입력하는 number, range
+                  number는 숫자를 사용자가 직접 입력하며
+                  range는 슬라이더 형태로 된 ui를 통해 숫자값을 입력한다.
+                  보통 사용자가 원하는 숫자값을 명확하게 아는 경우
+                  number를 사용하며
+                  사용자가 원하는 값을 정확하게 모르는 경우
+                  range를 사용한다.
+               -->
+         </fieldset>
+
+         <fieldset>
+             <legend>날짜 입력</legend>
+             <input type="date">DATE<br>
+             <input type="month">MONTH<br>
+             <input type="week">WEEK<br>
+             <!-- 
+                 날짜를 입력하는 date, month, week은
+                 각각
+                 년/월/일
+                 년/월
+                 년/째주
+                 를 입력하는 방식이다.
+                 보통은 date를 많이 사용하며
+                 월의 경우 월간 단위로 표시해야하는 데이터가 있는 경우
+                 사용을 하고
+                 week은 거의 사용하지 않는다.
+              -->
+         </fieldset>
+
+         <fieldset>
+             <legend>시간 입력</legend>
+             <input type="time">TIME<br> 
+             <input type="datetime">DATE<br> 
+             <input type="datetime-local">LOCAL<br>
+             <!-- 
+                 시간을 입력하는 것은
+                 time, datetime, datetime-local이 있으며
+                 time은 시간
+                 datetime, datetime-local은 날짜를 포함한 시간을
+                 표기한다.
+              -->
+         </fieldset>
+
+
+         <fieldset>
+             <legend>버튼</legend>
+             <input type="image" src="../image/log.png" width="100">
+             <input type="button" value="로그인">
+                 
+             <!--버튼
+                타입으로 image를 주면 이미지 자체가 버튼이 되고
+                button을 타입으로 주면 단순 텍스트가 들어간 버튼이 생성된다.
+                버튼을 단독으로는 사용해서는 의미가 없고
+                보통은 자바스크립트에서 특정한 기능을 구현한 후에
+                버튼에 연결해서 해당 기능을 동작시키기 위한
+                트리거로 사용한다.
+            -->
+         </fieldset>
+
+         <fieldset>
+            <legend>파일첨부</legend>
+            <input type="file">
+            <!-- 
+                서버쪽으로 사용자가 파일을 전송하고자 하는경우
+                전송할 파일을 선택하기 위해서 file 타입의 input을
+                사용한다.
+                어디까지나 '선택'까지만 구현을 해주기 때문에
+                데이터를 서버로 전달하는 부분은 별도로
+                자바스크립트 등을 통해 코드를 작성해줘야 한다.
+             -->
+         </fieldset>
+
+         <fieldset>
+             <legend>히든 데이터</legend>
+             <p>히든데이터는 화면에 표시되지 않습니다.</p>
+             <input type="hidden" value="direct_login">
+             <!-- 
+                 화면에 입력 ui를 노출시키지 않고
+                 데이터를 전달하고자할때 사용하며
+                 전달할 데이터값을 따로 지정을 해줘야 한다.
+
+                 대표적으로 11번가의 바로가기ON/OFF 기능을
+                 예로 들수 있다.
+              -->
+         </fieldset>
+
+
+    </form>    
+</body>
+</html>

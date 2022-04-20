@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p.234 마무리문제 2</title>
+    <style>
+      .Block{
+          background-color: silver;
+          width: 500px;
+          height: 150px;
+          text-align: center;
+          /*
+           텍스트를 감싸는 전체 박스가 div로 정의되면
+           화면 좌우 전체를 감싸기 때문에
+           별도로 가로, 세로의 수치를 지정
+          */
+      }
+      .title{
+          color: white;
+          text-shadow: 3px 2px 5px #000;
+          font-size: 50px;
+          line-height: 150px;
+          /* 
+          조건에서 요구한 스타일을 적용하고 
+          상하 위치도 가운데 정렬이 될 수 있도록
+          텍스트의 높이를 박스(div)와 동일하게 설정
+          */
+      }
+    </style>
+</head>
+<body>
+        <div class="Block">
+            <span class="title">웹 개발 기초</span>
+        </div>
+        <!-- 
+            텍스트의 뒷배경이 되는 div를 정의하고 클래스를 부여하고
+            텍스트는 span으로 분리하여 클래스를 부여
+         -->
+</body>
+</html>

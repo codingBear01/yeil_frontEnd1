@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        폼: 양식, 서식
+        웹페이지에서 개발자가 미리 만들어서
+        완성해놓은 내용이 아닌
+        웹페이지에 접속한 사용자가 작성하여 완성하고
+        작성한 내용을 백엔드(db, 서버)로 넘기기 위한
+        가교 역할을 해주는 것들을 폼이라고 한다.
+        ex)id/pw입력창
+     -->
+    <form name="id"></form>
+    <!-- 
+         폼은 table, ol, ul과 마찬가지로
+         폼을 만들겠다는 선언과 같다.
+         때문에 폼은 단순히 폼의 틀을 만드는 것이고
+         실제 구성요소는 폼 내부에 별도로 작성을 해줘야 한다.
+         폼에 줄 수 있는 속성은
+         action, target, name이 있으며
+         -action은 서버 프로그램을 통해 처리해야할떄
+         해당 서버와 연결하기 위한 내용이 들어가고
+         -target은 action을 취할때, 현재 페이지에서 할지
+         별도의 공간에서 할지를 나타내며
+         -name은 자바스크립트를 통해 작성한 프로그램에서
+         해당 폼에 접근하기 위한 구분자라고 볼 수 있다.         
+      -->
+    <h1>레드향 주문하기</h1>
+    <fieldset>
+      <legend>상품 선택</legend>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>배송 정보</legend>
+    </fieldset>
+    <!-- 
+          fieldset: 폼 내에서 영역을 따로 나눠서
+          사용자가 쉽게 보고 사용할수 있도록 만들어주는 역할
+          (테두리를 만든다)
+          legend: fieldset을 통해 만들어진 테두리에
+          이름을 표기해준다.
+       -->
+
+    <label>아이디(6자 이상) <input type="text" /> </label>
+    <br />
+    <label for="myPass">비밀번호(8자 이상)</label>
+    <input type="password" id="myPass" />
+    <!-- 
+            label: 폼 내부에 있는 폼 요소에게
+            이름(라벨)을 붙여주는 역할을 한다.
+            라벨 내부에 폼 요소가 있다면 별다른 작업을 하지 않아도
+            서로 연관되어 있음을(폼의 라벨임을) 알 수 있지만
+            만약 서로 떨어져 있는 경우에는
+            폼에게 id를 부여하고, 라벨에게 for를 통해 id를 지정하면
+            해당 라벨이 지정한 id의 라벨이 된다.
+         -->
+
+    <!-- 
+            input: 사용자에게 값을 입력받는 양식의 총칭
+            대표적으로 텍스트를 입력받으며
+            텍스트를 입력받을때의 속성값(type)은
+            text, password, search, url, email, tel이 있다.
+            각 속성에 따라 입력할수 있는 글자에 제한이 있거나
+            화면에 표시되는 방식이 달라지는 등 차이가 있다.
+          -->
+    <br /><br /><br /><br />
+    <fieldset>
+      <legend>로그인 창</legend>
+      <label
+        >아이디
+        <input type="text" size="10" value="아이디입력" maxlength="10" />
+      </label>
+      <br />
+      <label>비밀번호 <input type="password" /> </label>
+      <!-- 
+                  size: input창의 크기(width와 동일)
+                  value: input창의 초기 입력값
+                    값을 주지 않으면 input창은 빈 상태로 시작하고
+                    값을 주면 input창에 해당 값이 입력된 채로 시작
+                  maxlenght: 입력 가능한 값의 길이
+                    해당 길이 이상의 텍스트는 입력할수 없다.
+               -->
+    </fieldset>
+
+    <br /><br /><br /><br />
+    <fieldset>
+      <legend>용도에 따른 input type</legend>
+      <ul>
+        <li>
+          <label>검색:<input type="search" /></label><br />
+        </li>
+        <li>
+          <label>주소:<input type="url" /></label><br />
+        </li>
+        <li>
+          <label>메일:<input type="email" /></label><br />
+        </li>
+        <li>
+          <label>전화:<input type="tel" /></label>
+        </li>
+        <!-- 
+                        용도에 따른 input type값은
+                        pc에서는 별다른 차이가 없으나
+                        모바일 환경에서 입력을 시도할때
+                        하단에 나타나는 가상키보드가
+                        해당 속성에 최적화된 키보드로 나타나게 된다.
+                        ex)주소, 메일은 키보드에 .com 버튼이 함께 나오고
+                        메일의 경우 @가 기본 키보드에 포함되는 등 차이가 있다.        
+                    -->
+      </ul>
+    </fieldset>
+    <br /><br /><br /><br />
+  </body>
+</html>

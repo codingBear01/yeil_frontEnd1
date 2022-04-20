@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prac Gradation</title>
+    <style>
+      .grad {
+        background-color: blue;
+        background: linear-gradient(to right bottom, blue, white);
+      }
+
+      .gradRad {
+        background: linear-gradient(45deg, white, red);
+      }
+
+      .rainbowGrad {
+        background: linear-gradient(
+          to top,
+          red 10%,
+          orange 15%,
+          yellow 40%,
+          green 40%,
+          blue 60%,
+          navy 70%,
+          purple 90%
+        );
+      }
+
+      .pic9_13 {
+        background: radial-gradient(circle at 20% 20%, white, blue);
+        border-radius: 50%;
+      }
+
+      .redYellowGrad {
+        background: repeating-linear-gradient(yellow, red 20px);
+        width: 500px;
+        height: 500px;
+      }
+
+      .greyCircleGrad {
+        background: repeating-radial-gradient(circle, white, #ccc 10%);
+        width: 500px;
+        height: 500px;
+      }
+
+      .redYellowPattern {
+        background: repeating-linear-gradient(
+          yellow,
+          yellow 20px,
+          red 20px,
+          red 40px
+        );
+        width: 500px;
+        height: 500px;
+      }
+
+      .greyPattern {
+        background: repeating-radial-gradient(
+          circle,
+          white,
+          white 10%,
+          #ccc 10%,
+          #ccc 20%
+        );
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grad" style="width: 500px; height: 500px">
+      그라데이션이 적용된 배경색상입니다.
+    </div>
+
+    <div class="gradRad" style="width: 500px; height: 500px">
+      그라데이션이 적용된 배경색상입니다.
+    </div>
+
+    <div class="rainbowGrad" style="width: 500px; height: 500px"></div>
+
+    <div class="pic9_13" style="width: 500px; height: 500px"></div>
+
+    <div class="redYellowGrad"></div>
+    <div class="greyCircleGrad"></div>
+    <div class="redYellowPattern"></div>
+    <div class="greyPattern"></div>
+  </body>
+</html>

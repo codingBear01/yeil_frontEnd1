@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    <style>
+        body{
+            font-family:"arial";
+            /* font-family
+            웹페이지 내에서 사용할 텍스트의
+            글꼴(폰트)를 지정한다.
+            폰트의 이름을 값으로 주면 되고
+            폰트의 이름에 띄어쓰기가 포함되어 있으면
+            폰트 이름을 큰따움표("")로 작성해줘야 한다.
+            띄어쓰기가 없으면 그냥 작성해도 상관은 없지만
+            일괄적으로 적용하기 쉽도록
+            그냥 폰트명은 무조건 큰따움표로 적는다고
+            생각하는 편이 좋다.
+
+            폰트패밀리에 폰트값을 여러개 지정할 수 있으며
+            이 경우, 먼저 적힌 폰트가 사용할수 없는 상태면
+            다음 폰트를 사용하고, 다음 폰트도 사용할수 없으면
+            그 다음 폰트를 사용하면서 웹페이지를 표시한다.
+
+            */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        font family-글꼴을 적용한 텍스트입니다.
+    </p>
+
+    <p style="font-size: medium;">
+        기본 폰트 크기는 mediaum입니다.
+    </p>
+
+    <p style="font-size:xx-small;">medium을 기준으로 xx-small입니다.</p>
+    <p style="font-size:x-small;">medium을 기준으로 x-small입니다.</p>
+    <p style="font-size:small;">medium을 기준으로 small입니다.</p>
+    <p style="font-size:medium;">기준 크기는 mediaum입니다.</p>
+    <p style="font-size:large;">medium을 기준으로 large입니다.</p>
+    <p style="font-size:x-large;">medium을 기준으로 x-large입니다.</p>
+    <p style="font-size:xx-large;">medium을 기준으로 xx-large입니다.</p>
+
+    <p style="font-size: 10%;">medium을 기준으로 10% 크기입니다.</p>
+    <p style="font-size: 25%;">medium을 기준으로 25% 크기입니다.</p>
+    <p style="font-size: 50%;">medium을 기준으로 50% 크기입니다.</p>
+    <p style="font-size: 75%;">medium을 기준으로 75% 크기입니다.</p>
+    <p style="font-size: 150%;">medium을 기준으로 150% 크기입니다.</p>
+    <p style="font-size: 200%;">medium을 기준으로 200% 크기입니다.</p>
+
+    <p style="font-size: 12px;">12픽셀의 텍스트 크기입니다.</p>
+    <p style="font-size: 10pt;">10포인트의 텍스트 크기입니다.</p>
+    <!-- 
+        -px:픽셀크기
+        모니터 화면을 구성하는 화소 1개(1픽셀)의 크기를
+        기준으로 해서 크기를 수치화시킴
+        -pt:포인트 크기
+        인쇄물에 적용되는 크기를 기준으로 하여
+        텍스트의 크기를 수치화시킴
+
+        mediaum을 기준으로 하면
+        16px = 12pt = medium = 100%
+     -->
+     <p style="font-size: 1rem;">1rem의 텍스트 크기입니다.</p>
+     <!-- 
+         문서 시작위치(html)에서 지정된 글꼴의 크기를
+         1rem으로 기준삼아 크기를 비율로 작성한다.
+         ex)1.5rem, 0.3rem
+      -->
+
+      <p style="font-size:1em;">1em의 텍스트 크기입니다.</p>
+      <!-- 
+          부모객체의 폰트 크기를 기준으로 대문자 M의 크기를
+          기반으로 하여 비율을 조절 한다.
+       -->
+
+
+
+       
+       <p style="font-style: normal;">속성이 없는 텍스트</p>
+       <p style="font-style: italic;">italic 텍스트</p>
+       <p style="font-style: oblique;">oblique 텍스트</p>
+       <!-- 
+           폰트에 기울임 속성을 적용해주는 스타일로
+           -normal은 기울이지 않은 원본 폰트
+           -italic은 폰트파일 내에서 미리 만들어져 있는 기울어진 폰트
+           -oblique는 폰트 파일 내에 기울어진 폰트가 없을 경우,
+           웹브라우저에서 자체적인 내부 처리를 통해서 기울여서 만든 폰트
+
+           과거 도트를 찍어서 만들던 비트맵 타입 폰트의 경우
+           italic속성을 가진 기울어진 폰트가 포함되지 않은 경우도 많았으나
+           현재는 벡터를 기준으로 만들어지는 트루타입폰트를 주로 사용기에
+           대부분 italic 속성이 포함되어 있다.
+        -->
+
+        <p style="font-weight: bolder;">더 굵게 123456</p>
+        <p style="font-weight: bold;">굵게 123456</p>
+        <p style="font-weight: normal;">기본 123456</p>
+        <p style="font-weight: lighter;">얇게 123456</p>
+        <p style="font-weight: 900;">매우 굵게 123456</p>
+        <p style="font-weight: 100;">매우 얇게 123456</p>
+        <!-- 
+            font-weight
+            텍스트의 두께를 조절할수 있는 스타일
+            직접 수치를 적어서 100~900 범위 내로 두께를 조절할수 있고
+            혹은, 기본상태(normal)을 기준으로 bold, bolder, lighter
+            와 같이 더 굵게, 더 가늘게 속성을 줄 수도 있다.
+         -->
+
+</body>
+</html>

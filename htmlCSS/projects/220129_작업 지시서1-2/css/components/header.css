@@ -1,0 +1,32 @@
+header {
+  text-align: center;
+  background-color: var(--headerColor);
+  padding: 20px;
+  margin: 0;
+}
+
+.header-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-links li {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: var(--footerColor);
+  border-radius: 20.5px;
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.header-links a:link,
+.header-links a:visited {
+  text-decoration: none;
+  color: white;
+}

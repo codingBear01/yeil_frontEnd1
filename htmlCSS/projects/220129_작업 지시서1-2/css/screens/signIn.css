@@ -1,0 +1,14 @@
+.sign-in-container {
+  width: 540px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sign-in-container li {
+  margin: 10px 0;
+}
+
+.etc-info-box {
+  margin: 10px 0;
+}

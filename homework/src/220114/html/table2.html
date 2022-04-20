@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>표 만들기</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+            thead, tbody, tfoot 태그
+            html페이지에서 쓰는 것처럼 표를
+            헤드, 바디, 풋으로 나눠주는 역할을 한다.
+            다만 시각적으로 뭔가 변하지는 않고
+            해당 표를 TTS등을 통해 읽었을 때
+            각 데이터가 헤드인지, 바디인지, 풋인지
+            구분을 해서 읽어준다.
+        -->
+
+    <table>
+      <caption>
+        표의 헤드, 바디, 풋
+      </caption>
+      <thead>
+        <tr>
+          <th>방 이름</th>
+          <th>대상</th>
+          <th>크기</th>
+          <th>가격</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>유채방</td>
+          <td>여성 도미토리</td>
+          <td rowspan="3">4인실</td>
+          <td rowspan="4">1인 2만원</td>
+        </tr>
+        <tr>
+          <td rowspan="2">동백방</td>
+          <td>동성 도미토리</td>
+        </tr>
+        <tr>
+          <td>가족 1팀</td>
+        </tr>
+        <tr>
+          <td>천혜향방</td>
+          <td>-</td>
+          <td>2인실</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">바깥채 전체를 랜트합니다.</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- 
+            표의 구조를 만들기 위해서
+            thead, tbody, tfoot의 3개의 파트로 나눠서
+            표를 구성하면 
+            해당 표를 읽을 때 각 파트를 구분해서 읽어주고
+            코드로 표를 구성할때도 좀 더 가독성이 좋아진다.        
+        -->
+    <!-- 
+            표의 칸을 합칠때는
+            rowspan, colspan을 사용하며
+            rowspan은 아래쪽 방향으로(행을 합침)
+            colspan은 오른쪽 방향으로(열을 합침)
+            각 칸을 합쳐준다.
+            span 사용시의 주의사항은
+            1. 칸을 합치기 시작할 칸에 span을 넣어주며
+            2. 몇칸을 합칠지 숫자로 값을 입력한다.
+            (합칠 칸의 갯수를 입력하지, 몇번째 칸인지
+            번호를 입력하는게 아니다.)
+            3. 합쳐진 칸에는 데이터를 넣을 필요가 없기때문에
+            중복해서 데이터를 넣으면 해당 데이터는
+            밀려서 입력되기 때문에 칸이 늘어날수 있다.
+         -->
+
+    <br /><br /><br /><br /><br /><br />
+
+    <table>
+      <caption>
+        표 합치기
+      </caption>
+      <thead>
+        <tr>
+          <th>용도</th>
+          <th>중량</th>
+          <th>개수</th>
+          <th>가격</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">선물용</td>
+          <td>3kg</td>
+          <td>11~16과</td>
+          <td>35000원</td>
+        </tr>
+        <tr>
+          <td rowspan="2">5kg</td>
+          <td rowspan="2">18~26과</td>
+          <td>52000원</td>
+        </tr>
+        <tr>
+          <td rowspan="2">가정용</td>
+          <td>47000원</td>
+        </tr>
+        <tr>
+          <td>3kg</td>
+          <td>11~16과</td>
+          <td>30000원</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>문의전화</td>
+          <td colspan="3">010-0000-0000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- 열을 묶어서 관리하는 col, colgroup 태그 -->
+
+    <table>
+      <caption>
+        표 합치기
+      </caption>
+
+      <colgroup>
+        <col style="background-color: gray" />
+        <col style="width: 80px" />
+        <col />
+        <col style="width: 150px" />
+      </colgroup>
+      <!--
+                colGroup: 각 열 단위로 묶어서
+                관리하거나 속성을 적용시킬 수 있도록 해주는 태그
+                col : 각 열을 의미함.
+                        해당 열에 아무런 적용을 시키지 않더라도
+                        col을 작성해야한다.
+             -->
+
+      <thead>
+        <tr>
+          <th>용도</th>
+          <th>중량</th>
+          <th>개수</th>
+          <th>가격</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">선물용</td>
+          <td>3kg</td>
+          <td>11~16과</td>
+          <td>35000원</td>
+        </tr>
+        <tr>
+          <td rowspan="2">5kg</td>
+          <td rowspan="2">18~26과</td>
+          <td>52000원</td>
+        </tr>
+        <tr>
+          <td rowspan="2">가정용</td>
+          <td>47000원</td>
+        </tr>
+        <tr>
+          <td>3kg</td>
+          <td>11~16과</td>
+          <td>30000원</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>문의전화</td>
+          <td colspan="3">010-0000-0000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
